@@ -1,0 +1,11 @@
+
+@mixin head-size($font-size:40px) {
+    @for $i from 1 through 6 {
+        h#{$i} 
+        {
+            font-size: $font-size - ($i * 2 - 2);
+        }
+    }
+}
+
+@include head-size();
